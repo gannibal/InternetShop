@@ -1,5 +1,4 @@
-import java.util.ArrayList;
-import java.util.Random;
+package com;
 
 /**
  * Created by Misha on 23.07.2015.
@@ -7,27 +6,30 @@ import java.util.Random;
 public class Goods {
     private String name;
     private int price;
-    public  int id;
-    public static int count=1;
+    public int id;
+    public int count = 1;
 
     @Override
     public String toString() {
-        return "Goods{" +
+        return "com.Goods{" +
                 "name='" + name + '\'' +
                 ", price=" + price +
                 ", id=" + id +
                 '}';
     }
 
-    private  int generateId(){
+    private int generateId() {
         return count++;
     }
 
 
-    public Goods(String name, int price){
-        this.name=name;
-        this.price=price;
-        this.id=this.generateId();
+    public Goods(String name, int price) {
+        if (name == null || name == "" || price <= 0)
+            throw new IllegalArgumentException();
+
+        this.name = name;
+        this.price = price;
+        this.id = this.generateId();
     }
 
     public String getName() {
