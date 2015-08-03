@@ -1,6 +1,6 @@
 package test;
 
-import com.Goods;
+import main.Goods;
 import org.junit.Assert;
 import org.junit.Test;
 

@@ -1,8 +1,8 @@
 package test;
 
 
-import com.Goods;
-import com.GoodsInShop;
+import main.Goods;
+import main.GoodsInShop;
 import org.junit.Assert;
 import org.junit.Test;
 

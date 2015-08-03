@@ -1,4 +1,4 @@
-package com;
+package main;
 
 /**
  * Created by Misha on 23.07.2015.
@@ -11,7 +11,7 @@ public class Goods {
 
     @Override
     public String toString() {
-        return "com.Goods{" +
+        return "Goods{" +
                 "name='" + name + '\'' +
                 ", price=" + price +
                 ", id=" + id +

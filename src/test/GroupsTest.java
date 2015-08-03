@@ -1,8 +1,8 @@
 package test;
 
-import com.Goods;
-import com.GoodsInShop;
-import com.Groups;
+import main.Goods;
+import main.GoodsInShop;
+import main.Groups;
 import junit.framework.Assert;
 import org.junit.Test;
 

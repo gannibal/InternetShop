@@ -1,9 +1,9 @@
 package test;
 
-import com.Goods;
-import com.GoodsInShop;
-import com.Groups;
-import com.Shop;
+import main.Goods;
+import main.GoodsInShop;
+import main.Groups;
+import main.Shop;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

@@ -1,4 +1,4 @@
-package com;
+package main;
 
 /**
  * Created by Misha on 25.07.2015.
