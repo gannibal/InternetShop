@@ -1,4 +1,4 @@
-package main;
+package main.com.mentat.onlineshop;
 
 /**
  * Created by Misha on 23.07.2015.

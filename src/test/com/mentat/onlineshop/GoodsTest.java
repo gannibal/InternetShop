@@ -1,6 +1,6 @@
-package test;
+package test.com.mentat.onlineshop;
 
-import main.Goods;
+import main.com.mentat.onlineshop.Goods;
 import org.junit.Assert;
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package main;
+package main.com.mentat.onlineshop;
 
 import java.util.ArrayList;
 import java.util.Iterator;

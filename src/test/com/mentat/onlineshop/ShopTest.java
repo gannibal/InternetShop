@@ -1,9 +1,9 @@
-package test;
+package test.com.mentat.onlineshop;
 
-import main.Goods;
-import main.GoodsInShop;
-import main.Groups;
-import main.Shop;
+import main.com.mentat.onlineshop.Goods;
+import main.com.mentat.onlineshop.GoodsInShop;
+import main.com.mentat.onlineshop.Groups;
+import main.com.mentat.onlineshop.Shop;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
