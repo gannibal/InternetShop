@@ -1,4 +1,4 @@
-package main.com.mentat.onlineshop;
+package main.com.mentat.onlineshop.domain;
 
 import java.util.ArrayList;
 

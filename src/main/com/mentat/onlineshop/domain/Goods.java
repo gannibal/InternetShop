@@ -1,4 +1,4 @@
-package main.com.mentat.onlineshop;
+package main.com.mentat.onlineshop.domain;
 
 /**
  * Created by Misha on 23.07.2015.
@@ -7,7 +7,7 @@ public class Goods {
     private String name;
     private int price;
     public int id;
-    public int count = 1;
+    public static int count = 0;
 
     @Override
     public String toString() {
@@ -18,10 +18,13 @@ public class Goods {
                 '}';
     }
 
-    private int generateId() {
+    public static int generateId() {
         return count++;
     }
 
+
+    public Goods(){
+    }
 
     public Goods(String name, int price) {
         if (name == null || name == "" || price <= 0)
@@ -55,5 +58,6 @@ public class Goods {
     public void setId(int id) {
         this.id = id;
     }
+
 
 }

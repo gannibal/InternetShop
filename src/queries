@@ -1,0 +1,16 @@
+create table goods(
+id serial primary key not null,
+name varchar not null,
+price int not null)
+
+create table goods_in_shop(
+id serial primary key not null,
+amount int not null,
+good_id int references goods (id),
+group_id int references groups (id)
+)
+
+create table groups(
+id serial primary key not null,
+name varchar not null,
+parent_id int)

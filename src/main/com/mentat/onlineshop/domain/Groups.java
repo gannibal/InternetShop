@@ -1,4 +1,4 @@
-package main.com.mentat.onlineshop;
+package main.com.mentat.onlineshop.domain;
 
 import java.util.ArrayList;
 
@@ -6,10 +6,15 @@ import java.util.ArrayList;
  * Created by Misha on 23.07.2015.
  */
 public class Groups {
+    private int id;
     private String name;
     private ArrayList<Groups> children;
     private Groups parent;
+    private int parentId;
     private ArrayList<GoodsInShop> goods;
+
+    public Groups(){
+    }
 
     public Groups(String name, Groups parent, ArrayList<Groups> children, ArrayList<GoodsInShop> goods) {
         if (name == null || name == "" || parent == null || children == null || goods == null)
@@ -87,5 +92,22 @@ public class Groups {
     public void setChildren(ArrayList<Groups> children) {
         this.children = children;
     }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public Groups getParent(){ return parent;    }
+
+    public void setParent(Groups parent){ this.parent=parent; }
+
+    public int getParentId(){ return parentId;    }
+
+    public void setParentId(int parentId){ this.parentId=parentId; }
+
 }
 

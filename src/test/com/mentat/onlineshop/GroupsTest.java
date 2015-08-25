@@ -1,8 +1,8 @@
 package test.com.mentat.onlineshop;
 
-import main.com.mentat.onlineshop.Goods;
-import main.com.mentat.onlineshop.GoodsInShop;
-import main.com.mentat.onlineshop.Groups;
+import main.com.mentat.onlineshop.domain.Goods;
+import main.com.mentat.onlineshop.domain.GoodsInShop;
+import main.com.mentat.onlineshop.domain.Groups;
 import junit.framework.Assert;
 import org.junit.Test;
 
