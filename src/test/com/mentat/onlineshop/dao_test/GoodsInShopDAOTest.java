@@ -1,7 +1,7 @@
 package test.com.mentat.onlineshop.dao_test;
 
-import main.com.mentat.onlineshop.dao.GoodsDAOImpl;
-import main.com.mentat.onlineshop.dao.GoodsInShopDAOImpl;
+import main.com.mentat.onlineshop.dao.GoodsDAO;
+import main.com.mentat.onlineshop.dao.GoodsInShopDAO;
 import main.com.mentat.onlineshop.domain.Goods;
 import org.junit.Assert;
 import org.junit.Test;
@@ -12,8 +12,8 @@ import java.sql.SQLException;
  * Created by Misha on 23.08.2015.
  */
 public class GoodsInShopDAOTest {
-          GoodsInShopDAOImpl goodsDAO=new GoodsInShopDAOImpl();
-            GoodsDAOImpl good=new GoodsDAOImpl();
+          GoodsInShopDAO goodsDAO=new GoodsInShopDAO();
+            GoodsDAO good=new GoodsDAO();
         @Test
         public void insertGoodTest() throws SQLException, ClassNotFoundException {
             Goods testGood=good.getGoodByName("googleglass");

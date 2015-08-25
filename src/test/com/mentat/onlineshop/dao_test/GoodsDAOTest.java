@@ -1,6 +1,6 @@
 package test.com.mentat.onlineshop.dao_test;
 
-import main.com.mentat.onlineshop.dao.GoodsDAOImpl;
+import main.com.mentat.onlineshop.dao.GoodsDAO;
 import main.com.mentat.onlineshop.domain.Goods;
 import org.junit.Assert;
 import org.junit.Test;
@@ -11,7 +11,7 @@ import java.sql.SQLException;
  * Created by Misha on 23.08.2015.
  */
 public class GoodsDAOTest {
-    GoodsDAOImpl goodsDAO=new GoodsDAOImpl();
+    GoodsDAO goodsDAO=new GoodsDAO();
     @Test
     public void insertGoodTest(){
         goodsDAO.createGood("testGood", 100);

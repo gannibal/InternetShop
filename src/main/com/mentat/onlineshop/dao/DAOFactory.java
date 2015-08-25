@@ -20,13 +20,13 @@ public class DAOFactory {
         return connection;
     }
 
-    public GoodsDAOImpl getGoodsDAO() {
-        return new GoodsDAOImpl();
+    public GoodsDAO getGoodsDAO() {
+        return new GoodsDAO();
     }
-    public GoodsInShopDAOImpl getGoodsInShopDAO(){
-        return  new GoodsInShopDAOImpl();
+    public GoodsInShopDAO getGoodsInShopDAO(){
+        return  new GoodsInShopDAO();
     }
-    public GroupsDAOImpl getGroupsDAO(){
-        return new GroupsDAOImpl();
+    public GroupsDAO getGroupsDAO(){
+        return new GroupsDAO();
     }
 }

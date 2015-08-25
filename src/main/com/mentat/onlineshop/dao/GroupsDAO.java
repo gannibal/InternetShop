@@ -9,8 +9,8 @@ import java.util.ArrayList;
 /**
  * Created by Misha on 19.08.2015.
  */
-public class GroupsDAOImpl  {
-    private static Logger logger=Logger.getLogger(GroupsDAOImpl.class);
+public class GroupsDAO {
+    private static Logger logger=Logger.getLogger(GroupsDAO.class);
 
     public int createGroup(String name, int parentId) throws DAOException {
 

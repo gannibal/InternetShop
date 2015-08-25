@@ -1,7 +1,7 @@
 package test.com.mentat.onlineshop.dao_test;
 
 import junit.framework.Assert;
-import main.com.mentat.onlineshop.dao.GroupsDAOImpl;
+import main.com.mentat.onlineshop.dao.GroupsDAO;
 import main.com.mentat.onlineshop.domain.Groups;
 import org.junit.Before;
 import org.junit.Test;
@@ -13,7 +13,7 @@ import java.util.ArrayList;
  */
 public class GroupsDAOTest {
 
-    GroupsDAOImpl group=new GroupsDAOImpl();
+    GroupsDAO group=new GroupsDAO();
 
     /*@Test
     public void createGroupTest() throws SQLException, ClassNotFoundException {

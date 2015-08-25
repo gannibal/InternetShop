@@ -13,9 +13,9 @@ import java.util.ArrayList;
 /**
  * Created by Misha on 11.08.2015.
  */
-public class GoodsDAOImpl {
+public class GoodsDAO {
 
-    private static final Logger logger = Logger.getLogger(GoodsDAOImpl.class);
+    private static final Logger logger = Logger.getLogger(GoodsDAO.class);
 
 
     public void createGood(String name, int price) throws DAOException {

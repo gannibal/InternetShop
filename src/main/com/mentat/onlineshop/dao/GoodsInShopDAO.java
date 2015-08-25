@@ -10,8 +10,8 @@ import java.util.ArrayList;
 /**
  * Created by Misha on 19.08.2015.
  */
-public class GoodsInShopDAOImpl {
-    private static final Logger logger = Logger.getLogger(GoodsInShopDAOImpl.class);
+public class GoodsInShopDAO {
+    private static final Logger logger = Logger.getLogger(GoodsInShopDAO.class);
 
 
     public int insertGoodsInShop(Goods good, int amount, String groupName) throws DAOException {
@@ -28,7 +28,7 @@ public class GoodsInShopDAOImpl {
         statement=connection.prepareStatement(query);
         Goods temp=new Goods();
 
-        GoodsDAOImpl goods=new GoodsDAOImpl();
+        GoodsDAO goods=new GoodsDAO();
         temp.setId(goods.getGoodByName(good.getName()).getId());
         statement.setInt(1, temp.getId());
         statement.setInt(2,amount);
@@ -36,7 +36,7 @@ public class GoodsInShopDAOImpl {
         int groupId=0;
 
         if(groupName != null) {
-            GroupsDAOImpl tempGroup=new GroupsDAOImpl();
+            GroupsDAO tempGroup=new GroupsDAO();
             groupId= tempGroup.getGroupByName(groupName).getId();
             statement.setInt(3,groupId);
         }
