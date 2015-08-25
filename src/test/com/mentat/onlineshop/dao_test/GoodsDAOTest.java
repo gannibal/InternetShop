@@ -1,6 +1,6 @@
 package test.com.mentat.onlineshop.dao_test;
 
-import main.com.mentat.onlineshop.dao_impl.GoodsDAOImpl;
+import main.com.mentat.onlineshop.dao.GoodsDAOImpl;
 import main.com.mentat.onlineshop.domain.Goods;
 import org.junit.Assert;
 import org.junit.Test;

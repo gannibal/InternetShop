@@ -20,12 +20,7 @@ public class GoodsInShop {
         this.amount = amount;
     }
 
-    @Override
-    public String toString() {
-        return good.toString() +
-                ", amount=" + amount +
-                '}';
-    }
+
 
     public void setGood(Goods good) {
         this.good = good;
@@ -66,6 +61,13 @@ public class GoodsInShop {
     public void refreshBalance(int amount) {
         this.amount -= amount;
 
+    }
+
+    @Override
+    public String toString() {
+        return good.toString() +
+                ", amount=" + amount +
+                '}';
     }
 
 

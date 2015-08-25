@@ -1,8 +1,5 @@
-package main.com.mentat.onlineshop.dao_impl;
+package main.com.mentat.onlineshop.dao;
 
-import main.com.mentat.onlineshop.dao.DAOException;
-import main.com.mentat.onlineshop.dao.DAOFactory;
-import main.com.mentat.onlineshop.dao.GoodsDAO;
 import main.com.mentat.onlineshop.domain.Goods;
 import org.apache.log4j.Logger;
 
@@ -16,11 +13,11 @@ import java.util.ArrayList;
 /**
  * Created by Misha on 11.08.2015.
  */
-public class GoodsDAOImpl implements GoodsDAO {
+public class GoodsDAOImpl {
 
     private static final Logger logger = Logger.getLogger(GoodsDAOImpl.class);
 
-    @Override
+
     public void createGood(String name, int price) throws DAOException {
 
         DAOFactory daoFactory = new DAOFactory();
@@ -55,7 +52,7 @@ public class GoodsDAOImpl implements GoodsDAO {
         }
     }
 
-    @Override
+
     public Goods getGoodByName(String name) throws DAOException {
         Goods good = new Goods();
         String query = "select * from goods where name=?";
@@ -96,7 +93,7 @@ public class GoodsDAOImpl implements GoodsDAO {
         return good;
     }
 
-    @Override
+
     public Goods getGoodById(int id)throws DAOException {
         Goods good = new Goods();
         String query = "select * from goods where id=?";
@@ -134,7 +131,7 @@ public class GoodsDAOImpl implements GoodsDAO {
         return good;
     }
 
-    @Override
+
     public void updatePrice(String name, int newPrice) throws DAOException {
 
         DAOFactory daoFactory = new DAOFactory();
@@ -166,7 +163,7 @@ public class GoodsDAOImpl implements GoodsDAO {
         }
     }
 
-    @Override
+
     public void updateName(String oldName, String newName) throws DAOException {
 
         DAOFactory daoFactory = new DAOFactory();
@@ -196,7 +193,7 @@ public class GoodsDAOImpl implements GoodsDAO {
         }
     }
 
-    @Override
+
     public void deleteGoods(String name) throws DAOException {
         String query = "delete from goods where name=?";
         DAOFactory daoFactory = new DAOFactory();
@@ -226,7 +223,7 @@ public class GoodsDAOImpl implements GoodsDAO {
         }
     }
 
-    @Override
+
     public ArrayList<Goods> getAll()throws DAOException{
         String query = "select * from goods";
         DAOFactory daoFactory = new DAOFactory();

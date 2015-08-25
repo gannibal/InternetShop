@@ -1,8 +1,5 @@
-package main.com.mentat.onlineshop.dao_impl;
+package main.com.mentat.onlineshop.dao;
 
-import main.com.mentat.onlineshop.dao.DAOException;
-import main.com.mentat.onlineshop.dao.DAOFactory;
-import main.com.mentat.onlineshop.dao.GoodsInShopDAO;
 import main.com.mentat.onlineshop.domain.Goods;
 import main.com.mentat.onlineshop.domain.GoodsInShop;
 import org.apache.log4j.Logger;
@@ -13,10 +10,10 @@ import java.util.ArrayList;
 /**
  * Created by Misha on 19.08.2015.
  */
-public class GoodsInShopDAOImpl implements GoodsInShopDAO {
+public class GoodsInShopDAOImpl {
     private static final Logger logger = Logger.getLogger(GoodsInShopDAOImpl.class);
 
-    @Override
+
     public int insertGoodsInShop(Goods good, int amount, String groupName) throws DAOException {
 
         String query="insert into goods_in_shop (good_id, amount, group_id ) values(?, ?, ?)";
@@ -64,7 +61,7 @@ public class GoodsInShopDAOImpl implements GoodsInShopDAO {
         return 0;
     }
 
-    @Override
+
     public GoodsInShop getGoodsInShopByGoodName(String goodName) throws DAOException {
 
         GoodsInShop good=new GoodsInShop();
@@ -108,7 +105,7 @@ public class GoodsInShopDAOImpl implements GoodsInShopDAO {
         return good;
     }
 
-    @Override
+
     public void updateGoodsInShopAmount(String goodName, int newAmount)throws DAOException {
         DAOFactory daoFactory=new DAOFactory();
         PreparedStatement statement=null;
@@ -143,7 +140,7 @@ public class GoodsInShopDAOImpl implements GoodsInShopDAO {
         }
     }
 
-    @Override
+
     public ArrayList<GoodsInShop> getAll() throws DAOException {
 
         DAOFactory daoFactory=new DAOFactory();

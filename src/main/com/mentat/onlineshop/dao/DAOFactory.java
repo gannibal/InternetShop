@@ -1,9 +1,5 @@
 package main.com.mentat.onlineshop.dao;
 
-import main.com.mentat.onlineshop.dao_impl.GoodsDAOImpl;
-import main.com.mentat.onlineshop.dao_impl.GoodsInShopDAOImpl;
-import main.com.mentat.onlineshop.dao_impl.GroupsDAOImpl;
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;

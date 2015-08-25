@@ -9,19 +9,9 @@ public class Goods {
     public int id;
     public static int count = 0;
 
-    @Override
-    public String toString() {
-        return "Goods{" +
-                "name='" + name + '\'' +
-                ", price=" + price +
-                ", id=" + id +
-                '}';
-    }
-
     public static int generateId() {
         return count++;
     }
-
 
     public Goods(){
     }
@@ -57,6 +47,15 @@ public class Goods {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    @Override
+    public String toString() {
+        return "Goods{" +
+                "name='" + name + '\'' +
+                ", price=" + price +
+                ", id=" + id +
+                '}';
     }
 
 

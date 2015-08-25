@@ -1,8 +1,5 @@
-package main.com.mentat.onlineshop.dao_impl;
+package main.com.mentat.onlineshop.dao;
 
-import main.com.mentat.onlineshop.dao.DAOException;
-import main.com.mentat.onlineshop.dao.DAOFactory;
-import main.com.mentat.onlineshop.dao.GroupsDAO;
 import main.com.mentat.onlineshop.domain.Groups;
 import org.apache.log4j.Logger;
 
@@ -12,9 +9,9 @@ import java.util.ArrayList;
 /**
  * Created by Misha on 19.08.2015.
  */
-public class GroupsDAOImpl implements GroupsDAO {
+public class GroupsDAOImpl  {
     private static Logger logger=Logger.getLogger(GroupsDAOImpl.class);
-    @Override
+
     public int createGroup(String name, int parentId) throws DAOException {
 
         DAOFactory daoFactory = new DAOFactory();
@@ -50,7 +47,7 @@ public class GroupsDAOImpl implements GroupsDAO {
         return 0;
     }
 
-    @Override
+
     public Groups getGroupByName(String name) throws DAOException {
         DAOFactory daoFactory = new DAOFactory();
         PreparedStatement statement = null;
@@ -89,7 +86,7 @@ public class GroupsDAOImpl implements GroupsDAO {
         return group;
     }
 
-    @Override
+
     public void updateGroupName(String oldName, String newName) throws DAOException{
         DAOFactory daoFactory = new DAOFactory();
         PreparedStatement statement = null;
@@ -119,7 +116,7 @@ public class GroupsDAOImpl implements GroupsDAO {
         }
     }
 
-    @Override
+
     public void updateGroupParent(String groupName, String parentName) throws DAOException {
         DAOFactory daoFactory = new DAOFactory();
         PreparedStatement statement = null;
@@ -166,7 +163,7 @@ public class GroupsDAOImpl implements GroupsDAO {
     }
 
 
-    @Override
+
     public void delete(String name) throws DAOException{
 
         DAOFactory daoFactory = new DAOFactory();
@@ -207,7 +204,7 @@ public class GroupsDAOImpl implements GroupsDAO {
         }
     }
 
-    @Override
+
     public void deleteAll() throws DAOException{
         DAOFactory daoFactory = new DAOFactory();
         PreparedStatement statement = null;
@@ -239,7 +236,7 @@ public class GroupsDAOImpl implements GroupsDAO {
 
     }
 
-    @Override
+
     public ArrayList<Groups> getAll() throws DAOException{
         DAOFactory daoFactory = new DAOFactory();
         PreparedStatement statement = null;

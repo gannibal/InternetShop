@@ -1,7 +1,7 @@
 package test.com.mentat.onlineshop.dao_test;
 
 import junit.framework.Assert;
-import main.com.mentat.onlineshop.dao_impl.GroupsDAOImpl;
+import main.com.mentat.onlineshop.dao.GroupsDAOImpl;
 import main.com.mentat.onlineshop.domain.Groups;
 import org.junit.Before;
 import org.junit.Test;
